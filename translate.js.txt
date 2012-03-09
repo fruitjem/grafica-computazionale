@@ -1,0 +1,4 @@
+Point.prototype.translate = function (dx,dy){
+	this.x += dx;
+	this.y += dy;
+}
