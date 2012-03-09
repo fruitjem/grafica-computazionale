@@ -32,8 +32,7 @@ function Triangle (p1,p2,p3){
 		var area;
 		var p = ( this.getPerimeter()/2 ) ;
 		//Formula di ERONE
-		// |p (p - l1) (p - l2) (p - l3)|
-
-        return area = Math.sqrt(p * (p - lato1) * (p - lato2) * (p - lato3));
+		// A = |p (p - l1) (p - l2) (p - l3)|
+		return area = Math.sqrt(p * (p - lato1) * (p - lato2) * (p - lato3));
 	}
 }
