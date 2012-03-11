@@ -63,3 +63,18 @@ var randomPoints = function (n) {
 }
 
 var points = randomPoints(100);
+
+var sopraLaBisettrice = function (array){
+  var test = function (point){
+    return point.y - point.x > 0 ;  
+  }
+  var result = array.filter (function (item,index,array){
+    return test(item);
+  })
+  return result ;
+
+} 
+
+
+
+
