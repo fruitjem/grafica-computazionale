@@ -75,6 +75,19 @@ var sopraLaBisettrice = function (array){
 
 } 
 
+var Line = function (a, b, c){
+  if (!(this instanceof Line )){
+    return new Line (a,b,c);
+  }
 
+  this.a = a || 0;
+  this.b = b || 0;
+  this.c = c || 0;
+}
+
+Point.prototype.distance = function (Line){
+  var distance = (( line.a * this.x ) + (line.b * this.y) + line.c ) / Math.sqrt ((Math.pow(line.a,2) + Math.pow(line.b,2))
+  return distance;  
+}
 
 
