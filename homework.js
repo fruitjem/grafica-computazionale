@@ -86,7 +86,7 @@ var Line = function (a, b, c){
 }
 
 Point.prototype.distance = function (Line){
-  var distance = (( line.a * this.x ) + (line.b * this.y) + line.c ) / Math.sqrt ((Math.pow(line.a,2) + Math.pow(line.b,2))
+  var distance = Math.abs((( line.a * this.x ) + (line.b * this.y) + line.c )) / Math.sqrt ((Math.pow(line.a,2) + Math.pow(line.b,2))
   return distance;  
 }
 
