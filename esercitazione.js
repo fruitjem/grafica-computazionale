@@ -40,5 +40,17 @@ var comp  = function(array){
 }
 
 
+var distributeLeft = function (array){
+	var el = array[0];
+	var sub_array = array[1];
+	var result = [];
+	for (var i = sub_array.length - 1; i >= 0; i--) {
+		var appo = []
+		appo.push(el);
+		appo.push(sub_array[i]);
+		result.push(appo); 
+	}
+}
+
 
 
