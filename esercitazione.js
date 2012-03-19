@@ -50,6 +50,7 @@ var distributeLeft = function (array){
 		appo.push(sub_array[i]);
 		result.push(appo); 
 	}
+	return result;
 }
 
 
