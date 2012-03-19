@@ -23,11 +23,21 @@ var comp2 = function (array){
 var compn = function (array){
 	return function (x){
 		return array.reduce (function (prev,cur){
-			prev(cur(x));
+			prev(cur());
 		})
 	}
 }
 
+
+var comp  = function(array){
+	return function (x){
+		var result = [];
+		for (var i = array.length - 1; i >= 0; i--) {
+			result.push(array[i](x));
+		}
+		return result;
+	}
+}
 
 
 
