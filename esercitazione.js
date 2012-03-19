@@ -8,13 +8,27 @@ var aa = function (f){
 		return result = array.map(fun);
 	} 
 }
-
+//composizione binaria di funzioni
 var comp2 = function (array){
-	var f1 = array[0];
-	var f2 = array[1];
+	var f = array[0];
+	var g = array[1];
 	
-	return fun = function (x){
-		f1(f2(x));
+	return function (x){
+		return f(g(x));
 	}
 }
+
+//composizione n-aria di funzioni
+
+var compn = function (array){
+	return function (x){
+		return array.reduce (function (prev,cur){
+			prev(cur(x));
+		})
+	}
+}
+
+
+
+
 
